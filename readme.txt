@@ -16,7 +16,7 @@ This plugin replaces the default recent comments widget so it behaves differentl
 
 All development happens on Github at [https://github.com/csalzano/recent-comments-widget-with-comment-excerpts](https://github.com/csalzano/recent-comments-widget-with-comment-excerpts)
 
-Contact me by posting a message in the forums or [@breakfastcodes](https://twitter.com) on twitter.
+Contact me by posting a message in the forums or [@breakfastcodes](https://twitter.com/breakfastcodes) on twitter.
 
 
 == Installation ==
