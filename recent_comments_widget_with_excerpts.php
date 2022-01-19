@@ -36,7 +36,7 @@ class WP_Widget_Recent_Comments_Excerpts extends WP_Widget {
 		global $wpdb, $comments, $comment;
 
 		extract($args, EXTR_SKIP);
-		$title = apply_filters('widget_title', empty($instance['title']) ? __('Recent Comments') : $instance['title']);
+		$title = apply_filters('widget_title', empty($instance['title']) ? __( 'Recent Comments', 'recent-comments-widget' ) : $instance['title']);
 		if ( empty( $instance['number'] ) || ! $number = (int) $instance['number'] )
 			$number = 5;
 		else if ( $number < 1 )
