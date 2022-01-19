@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Plugin Name: Recent Comments Widget with Excerpts
  * Plugin URI: https://github.com/csalzano/recent-comments-widget-with-comment-excerpts/
- * Description: Modifies the built-in recent comments widget to show excerpts instead of post titles
+ * Description: Modifies the built-in recent comments widget to show excerpts instead of post titles.
  * Author: Corey Salzano
  * Author URI: https://breakfastco.xyz
  * Version: 1.0.0
