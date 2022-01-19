@@ -1,16 +1,23 @@
-=== Recent comments widget with comment excerpts ===
+=== Recent Comments Widget with Comment Excerpts ===
+
 Contributors: salzano
-Donate link: http://www.tacticaltechnique.com/donate/
-Tags: recent comments, recent comment excerpts, comment excerpts, recent comments widget, default widgets, latest comments, newest comments
+Tags: recent comments, recent comment excerpts, comment excerpts, latest comments, newest comments
 Requires at least: 2.8
-Tested up to: 3.5
-Stable tag: 0.121230
+Tested up to: 5.8.3
+Stable tag: 1.0.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Changes the behavior of the built-in Recent Comments widget to display comment excerpts instead of post titles
 
 == Description ==
 
 This plugin replaces the default recent comments widget so it behaves differently. Instead of the format "username on post title," the widget will display "username said comment excerpt."
+
+All development happens on Github at [https://github.com/csalzano/recent-comments-widget-with-comment-excerpts](https://github.com/csalzano/recent-comments-widget-with-comment-excerpts)
+
+Contact me by posting a message in the forums or [@breakfastcodes](https://twitter.com) on twitter.
+
 
 == Installation ==
 
@@ -32,6 +39,15 @@ This plugin replaces the default recent comments widget so it behaves differentl
 
 == Change Log ==
 
+= 1.0.0 =
+* [Added] Adds a text domain and makes all strings translatable
+* [Added] Adds a setting to modify the character length of the comment excerpt
+* [Added] Adds a license declaration to confirm this is GPLv2 code
+* [Changed] Changes tested up to version number to 5.8.3
+* [Changed] Changes the version number to use semantic versioning
+* [Changed] Changes the plugin URI to point to the Github repo where I am now maintaining this plugin
+* [Removed] Removes inline CSS to best play nice with users' sites
+
 = 0.121230 =
 Wrapped the author name with an HTML span to allow CSS to target only the author name.
 
@@ -45,6 +61,9 @@ Stop showing ellipsis if the comment length is not long enough to be trimmed by 
 First build
 
 == Upgrade Notice ==
+
+= 1.0.0 = 
+I am revisiting all my years-old plugins to see if anyone is still using them. This version fixes all issues raised in the forums, including making all strings translatable and adding a setting to control the character length of the comment excerpt. If you want me to add a block to this plugin with the same features as this widget, please reach out and say so in the forums or on twitter @breakfastcodes. Changes tested up to version number to 5.8.3. 
 
 = 0.121230 = 
 The new feature included with this update is the ability to target the author's name with CSS. Thank you, NicoleHolgate, for requesting this feature on the support forum.
