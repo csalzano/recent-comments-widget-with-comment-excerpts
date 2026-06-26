@@ -5,7 +5,7 @@
  * Description: Modifies the built-in recent comments widget to show excerpts instead of post titles.
  * Author: Corey Salzano
  * Author URI: https://breakfastco.xyz
- * Version: 1.0.1
+ * Version: 1.0.2
  * Text Domain: recent-comments-widget-with-comment-excerpts
  * License: GPLv2 or later
  *

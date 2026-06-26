@@ -3,8 +3,8 @@
 Contributors: salzano
 Tags: recent comments, recent comment excerpts, comment excerpts, latest comments, newest comments
 Requires at least: 2.8
-Tested up to: 5.8.3
-Stable tag: 1.0.1
+Tested up to: 7.0
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,10 @@ Contact me by posting a message in the forums or [@breakfastcodes](https://twitt
 
 == Change Log ==
 
+= 1.0.2 =
+* [Fixed] Escapes strings before output in HTML.
+* [Changed] Changes tested up to version to 7.0.
+
 = 1.0.1 =
 * [Changed] Changes tested up to version to 6.4.1.
 
@@ -64,6 +68,9 @@ Stop showing ellipsis if the comment length is not long enough to be trimmed by 
 First build
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+Escapes strings before output in HTML. Changes tested up to version to 7.0.
 
 = 1.0.1 =
 Changes tested up to version to 6.4.1.
