@@ -84,6 +84,10 @@ class WP_Widget_Recent_Comments_Excerpts extends WP_Widget {
 
 		$comments = array_slice( (array) $comments, 0, $number );
 
+		if ( empty( $comments ) ) {
+			return;
+		}
+
 		// how many characters in length should the comment excerpts be?
 		$excerpt_len = empty( $instance['length'] ) ? 50 : absint( $instance['length'] );
 
