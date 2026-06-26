@@ -55,7 +55,7 @@ class WP_Widget_Recent_Comments_Excerpts extends WP_Widget {
 	 * @return void
 	 */
 	public function widget( $args, $instance ) {
-		global $wpdb, $comments, $comment;
+		global $comments, $comment;
 
 		extract( $args, EXTR_SKIP );
 		$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'Recent Comments', 'recent-comments-widget-with-comment-excerpts' ) : $instance['title'] );
@@ -68,7 +68,17 @@ class WP_Widget_Recent_Comments_Excerpts extends WP_Widget {
 		}
 
 		if ( ! $comments = wp_cache_get( 'recent_comments', 'widget' ) ) {
-			$comments = $wpdb->get_results( "SELECT $wpdb->comments.* FROM $wpdb->comments JOIN $wpdb->posts ON $wpdb->posts.ID = $wpdb->comments.comment_post_ID WHERE comment_approved = '1' AND post_status = 'publish' ORDER BY comment_date_gmt DESC LIMIT 150" );
+			$comments = get_comments(
+				apply_filters(
+					'widget_comments_args',
+					array(
+						'number'      => 150,
+						'status'      => 'approve',
+						'post_status' => 'publish',
+					),
+					$instance
+				)
+			);
 			wp_cache_add( 'recent_comments', $comments, 'widget' );
 		}
 
