@@ -69,13 +69,13 @@ First build
 Changes tested up to version to 6.4.1.
 
 = 1.0.0 = 
-I am revisiting all my years-old plugins to see if anyone is still using them. This version fixes all issues raised in the forums, including making all strings translatable and adding a setting to control the character length of the comment excerpt. If you want me to add a block to this plugin with the same features as this widget, please reach out and say so in the forums or on twitter @breakfastcodes. Changes tested up to version number to 5.8.3. 
+I am revisiting all my years-old plugins to see if anyone is still using them. This version fixes all issues raised in the forums, including making all strings translatable and adding a setting to control the character length of the comment excerpt. Changes tested up to version number to 5.8.3.
 
 = 0.121230 = 
 The new feature included with this update is the ability to target the author's name with CSS. Thank you, NicoleHolgate, for requesting this feature on the support forum.
 
 = 0.111019 = 
-This update handles comment data more responsibly. Other comment filters will be applied using apply_filters. Comments containing international characters will be properly truncated with mb_substr instead of substr. HTML will be removed from the comments with strip_tags. Up to 150 comments can be displayed instead of 15. Thank the users of this plugin for suggesting these changes on my blog.
+Handles comment data more responsibly. Other comment filters will be applied using apply_filters. Comments containing international characters will be properly truncated with mb_substr instead of substr. HTML will be removed from the comments. Up to 150 comments can be displayed instead of 15.
 
 = 0.110111 =
 The previous version of this plugin would add an ellipsis (...) to the end of the comment excerpts even if the total length of the comment is less than the excerpt length. This length is currently 50 characters.
