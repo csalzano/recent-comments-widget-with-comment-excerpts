@@ -155,7 +155,7 @@ class WP_Widget_Recent_Comments_Excerpts extends WP_Widget {
 		</p>
 
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>"><?php _esc_html_e( 'Number of comments to show (at most 150):', 'recent-comments-widget-with-comment-excerpts' ); ?></label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>"><?php esc_html_e( 'Number of comments to show (at most 150):', 'recent-comments-widget-with-comment-excerpts' ); ?></label>
 			<input id="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'number' ) ); ?>" type="text" value="<?php echo esc_attr( $number ); ?>" size="3" />
 		</p>
 
