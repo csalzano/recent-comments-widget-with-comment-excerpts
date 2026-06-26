@@ -4,7 +4,7 @@ Contributors: salzano
 Tags: recent comments, recent comment excerpts, comment excerpts, latest comments, newest comments
 Requires at least: 2.8
 Tested up to: 5.8.3
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,9 @@ Contact me by posting a message in the forums or [@breakfastcodes](https://twitt
 
 == Change Log ==
 
+= 1.0.1 =
+* [Changed] Changes tested up to version to 6.4.1.
+
 = 1.0.0 =
 * [Added] Adds a text domain and makes all strings translatable
 * [Added] Adds a setting to modify the character length of the comment excerpt
@@ -61,6 +64,9 @@ Stop showing ellipsis if the comment length is not long enough to be trimmed by 
 First build
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Changes tested up to version to 6.4.1.
 
 = 1.0.0 = 
 I am revisiting all my years-old plugins to see if anyone is still using them. This version fixes all issues raised in the forums, including making all strings translatable and adding a setting to control the character length of the comment excerpt. If you want me to add a block to this plugin with the same features as this widget, please reach out and say so in the forums or on twitter @breakfastcodes. Changes tested up to version number to 5.8.3. 
