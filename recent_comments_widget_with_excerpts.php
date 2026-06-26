@@ -6,7 +6,8 @@
  * Author: Corey Salzano
  * Author URI: https://breakfastco.xyz
  * Version: 1.0.1
- * Text Domain: recent-comments-widget
+ * Text Domain: recent-comments-widget-with-comment-excerpts
+ * License: GPLv2 or later
  *
  * @package recent-comments-widget-width-comment-excerpts
  * @author Corey Salzano <csalzano@duck.com>
@@ -27,9 +28,9 @@ class WP_Widget_Recent_Comments_Excerpts extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'recent_comments_widget',
-			__( 'Recent Comments', 'recent-comments-widget' ),
+			__( 'Recent Comments', 'recent-comments-widget-with-comment-excerpts' ),
 			array(
-				'description' => __( 'The most recent comments with excerpts', 'recent-comments-widget' ),
+				'description' => __( 'The most recent comments with excerpts', 'recent-comments-widget-with-comment-excerpts' ),
 			)
 		);
 
@@ -57,7 +58,7 @@ class WP_Widget_Recent_Comments_Excerpts extends WP_Widget {
 		global $wpdb, $comments, $comment;
 
 		extract( $args, EXTR_SKIP );
-		$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'Recent Comments', 'recent-comments-widget' ) : $instance['title'] );
+		$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'Recent Comments', 'recent-comments-widget-with-comment-excerpts' ) : $instance['title'] );
 		if ( empty( $instance['number'] ) || ! $number = (int) $instance['number'] ) {
 			$number = 5;
 		} elseif ( $number < 1 ) {
@@ -93,7 +94,7 @@ class WP_Widget_Recent_Comments_Excerpts extends WP_Widget {
 				printf(
 					'<li class="recentcomments"><span class="recentcommentsauthor">%s</span> %s <a href="%s">%s</a></li>',
 					get_comment_author_link(),
-					esc_html__( 'said', 'recent-comments-widget' ),
+					esc_html__( 'said', 'recent-comments-widget-with-comment-excerpts' ),
 					esc_url( get_comment_link( $comment->comment_ID ) ),
 					$recent_comment_text
 				);
@@ -135,17 +136,17 @@ class WP_Widget_Recent_Comments_Excerpts extends WP_Widget {
 		$length = empty( $instance['length'] ) ? 50 : absint( $instance['length'] );
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'recent-comments-widget' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'recent-comments-widget-with-comment-excerpts' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e( 'Number of comments to show (at most 150):', 'recent-comments-widget' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e( 'Number of comments to show (at most 150):', 'recent-comments-widget-with-comment-excerpts' ); ?></label>
 			<input id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="text" value="<?php echo $number; ?>" size="3" />
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'length' ); ?>"><?php _e( 'Comment excerpt character count:', 'recent-comments-widget' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'length' ); ?>"><?php _e( 'Comment excerpt character count:', 'recent-comments-widget-with-comment-excerpts' ); ?></label>
 			<input id="<?php echo $this->get_field_id( 'length' ); ?>" name="<?php echo $this->get_field_name( 'length' ); ?>" type="text" value="<?php echo $length; ?>" />
 		</p>
 		<?php
